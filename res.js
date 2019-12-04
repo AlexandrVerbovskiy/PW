@@ -564,7 +564,7 @@ let x1=20;
 function tele1(){
         photomen.src="img/p3.png";
       if(xpos>leftLim){        shag.play();
-        xpos -= x1;
+        xpos -= x1*2;
 
       }
         draw1();
@@ -573,25 +573,25 @@ function tele1(){
 function tele2(){
 shag.play(); 
     if(ypos>topLim){             
-      ypos -= 20;
-      w1-=0.4;
-      h1-=0.8;
+      ypos -= 40;
+      w1-=0.9;
+      h1-=1.6;
    }
       draw1();
   }
 
   function tele3(){
     if(ypos<downLim){shag.play();
-      ypos += 20;
-      w1+=0.4;
-      h1+=0.8;            }
+      ypos += 40;
+      w1+=0.8;
+      h1+=1.6;            }
       draw1();
   }
     function tele4(){
     photomen.src="img/p2.png";
     if(xpos<rightLim){
                   shag.play();
-      xpos += x1;
+      xpos += x1*2;
 
     }
       draw1();
